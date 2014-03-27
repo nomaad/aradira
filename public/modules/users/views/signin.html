@@ -15,25 +15,25 @@
 		</a>
 	</div>
 	<h3 class="col-md-12 text-center">Or with your email</h3>
-	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2">
-		<form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
-			<fieldset>
-				<div class="form-group">
-					<label for="email">Email</label>
-					<input type="text" id="email" name="email" class="form-control" data-ng-model="credentials.email" placeholder="Email">
-				</div>
-				<div class="form-group">
-					<label for="password">Password</label>
-					<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Password">
-				</div>
-				<div class="text-center form-group">
-					<button type="submit" class="btn btn-primary">Sign in</button>&nbsp; or&nbsp;
-					<a href="/#!/signup">Sign up</a>
-				</div>
-				<div data-ng-show="error" class="text-center text-danger">
-					<strong>{{error}}</strong>
-				</div>
-			</fieldset>
-		</form>
+	<div class="col-xs-offset-2 col-xs-8 col-md-offset-4 col-md-4">
+        <form data-ng-submit="signin()" class="signin form-horizontal" autocomplete="off">
+            <div class="login-form">
+                <div class="form-group">
+                    <input type="text" id="email" name="email"  class="form-control login-field" data-ng-model="credentials.email" placeholder="Email" />
+                    <label class="login-field-icon fui-user" for="email"></label>
+                </div>
+
+                <div class="form-group">
+                    <input type="password" id="password" name="password" class="form-control login-field" data-ng-model="credentials.password" placeholder="Passwort" />
+                    <label class="login-field-icon fui-lock" for="password"></label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Anmelden</button>
+                <a class="login-link" href="/#!/signup">Registrieren</a>
+                <a class="login-link" href="/#!/signup">Passwort vergessen?</a>
+                <div data-ng-show="error" class="text-center text-danger">
+                    <strong>{{error}}</strong>
+                </div>
+            </div>
 	</div>
 </section>
