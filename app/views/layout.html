@@ -35,8 +35,9 @@
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css">
 
-    <!-- Loading Flat UI -->
+    <!-- Flat UI & Font Awesome-->
     <link rel="stylesheet" href="/lib/flat-ui-official/css/flat-ui.css">
+    <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css">
@@ -55,7 +56,7 @@
 </head>
 
 <body class="ng-cloak">
-	<header data-ng-include="'/modules/core/views/header.html'" class="navbar navbar-fixed-top navbar-inverse"></header>
+	<header data-ng-include="'/modules/core/views/header.html'" class="navbar navbar-fixed-top navbar-lg navbar-default"></header>
 	<section class="content">
 		<section class="container">
 			{% block content %}{% endblock %}

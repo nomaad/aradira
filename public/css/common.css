@@ -7,3 +7,8 @@ a.undecorated-link:hover {
 [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
 	display: none !important;
 }
+
+.top-buffer{ margin-top: 40px; }
+.navbar{
+    border-bottom: #ccc solid 1px;
+}
