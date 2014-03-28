@@ -4,6 +4,8 @@
 npm-debug.log
 node_modules/
 public/lib
+!public/lib/flat-ui-official/css/flat-ui.css
+!public/lib/flat-ui-official/less/variables.less
 app/tests/coverage/
 .bower-*/
 .idea/
