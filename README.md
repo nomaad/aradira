@@ -1,4 +1,4 @@
-aradira is landsharing app for gardeners in Switzerland.
+aradira is landsharing app for urban gardeners in Switzerland.
 
 The goal is to promote [urban gardening](http://en.wikipedia.org/wiki/Urban_agriculture). It connects people who own unused land with people that search for a garden.
 
