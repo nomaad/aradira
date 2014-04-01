@@ -1,51 +1,42 @@
 <section class="row" data-ng-controller="AuthenticationController">
-	<h3 class="col-md-12 text-center">Sign up using your social accounts</h3>
-	<div class="col-md-12 text-center">
-		<a href="/auth/facebook" class="undecorated-link">
-			<img src="/modules/users/img/buttons/facebook.png">
-		</a>
-		<a href="/auth/twitter" class="undecorated-link">
-			<img src="/modules/users/img/buttons/twitter.png">
-		</a>
-		<a href="/auth/google" class="undecorated-link">
-			<img src="/modules/users/img/buttons/google.png">
-		</a>
-		<a href="/auth/linkedin" class="undecorated-link">
-			<img src="/modules/users/img/buttons/linkedin.png">
-		</a>
-	</div>
-	<h3 class="col-md-12 text-center">Or with your email</h3>
-	<div class="col-xs-offset-2 col-xs-8 col-md-offset-5 col-md-2">
-		<form data-ng-submit="signup()" class="signin form-horizontal" autocomplete="off">
-			<fieldset>
-				<div class="form-group">
-					<label for="firstName">First Name</label>
-					<input type="text" id="firstName" name="firstName" class="form-control" data-ng-model="credentials.firstName" placeholder="First Name">
-				</div>
-				<div class="form-group">
-					<label for="lastName">Last Name</label>
-					<input type="text" id="lastName" name="lastName" class="form-control" data-ng-model="credentials.lastName" placeholder="Last Name">
-				</div>
-				<div class="form-group">
-					<label for="email">Email</label>
-					<input type="text" id="email" name="email" class="form-control" data-ng-model="credentials.email" placeholder="Email">
-				</div>
-				<div class="form-group">
-					<label for="username">Username</label>
-					<input type="text" id="username" name="username" class="form-control" data-ng-model="credentials.username" placeholder="Username">
-				</div>
-				<div class="form-group">
-					<label for="password">Password</label>
-					<input type="password" id="password" name="password" class="form-control" data-ng-model="credentials.password" placeholder="Password">
-				</div>
-				<div class="text-center form-group">
-					<button type="submit" class="btn btn-large btn-primary">Sign up</button>&nbsp; or&nbsp;
-					<a href="/#!/signin" class="show-signup">Sign in</a>
-				</div>
-				<div data-ng-show="error" class="text-center text-danger">
-					<strong>{{error}}</strong>
-				</div>
-			</fieldset>
-		</form>
-	</div>
+    <div class="col-xs-12 col-md-offset-4 col-md-4 top-buffer">
+        <h2>Jetzt mitmachen.</h2>
+        <form data-ng-submit="signup()" class="signin form-horizontal" autocomplete="off">
+            <div class="login-form">
+                <div><small>Melde dich an und finde oder teile einen Garten. Du kannst dich über ein Social-Network anmelden:</small></div>
+                <a href="/auth/facebook" class="undecorated-link">
+                    <img src="/modules/users/img/buttons/facebook_small.png">
+                </a>
+                <a href="/auth/twitter" class="undecorated-link">
+                    <img src="/modules/users/img/buttons/twitter_small.png">
+                </a>
+                <a href="/auth/google" class="undecorated-link">
+                    <img src="/modules/users/img/buttons/google_small.png">
+                </a>
+                <hr/>
+                <p><small>Oder registriere dich mit folgenden Angaben:</small></p>
+                <div class="form-group">
+                    <input type="text" id="firstName" name="firstName"  class="form-control login-field" data-ng-model="credentials.firstName" placeholder="Vorname" />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="lastName" name="lastName"  class="form-control login-field" data-ng-model="credentials.lastName" placeholder="Nachname" />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="email" name="email"  class="form-control login-field" data-ng-model="credentials.email" placeholder="Email" />
+                </div>
+                <div class="form-group">
+                    <input type="text" id="username" name="username"  class="form-control login-field" data-ng-model="credentials.username" placeholder="Benutzername" />
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" class="form-control login-field" data-ng-model="credentials.password" placeholder="Passwort" />
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg btn-block">Registrieren</button>
+                <a class="login-link" href="/#!/signin">Bereits Mitglied? Hier anmelden.</a>
+                <div data-ng-show="error" class="text-center text-danger">
+                    <small>{{error}}</small>
+                </div>
+            </div>
+        </form>
+    </div>
 </section>

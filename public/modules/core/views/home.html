@@ -1,30 +1,32 @@
 <section data-ng-controller="HomeController">
-    <section class="top-buffer">
-        <h2>Landsharing in der Schweiz.</h2>
+    <section class="">
+        <div class="page-header">
+        <h1>Landsharing in der Schweiz.</h1>
+        </div>
         <p>Diese Böden in deiner Nähe suchen einen Gärtner:</p>
         <leaflet markers="markers" center="cen" paths="paths" height="400px"></leaflet>
         <div class="row top-buffer">
             <div>
                 <div class="col-md-4 col-md-offset-2">
                     <h4><i class="fa fa-leaf"></i>&nbsp; Du hast einen Garten</h4>
-                    Jedoch <strong>keinen grünen Daumen</strong>? Du würdest schon gerne Tomaten pflanzen, hast aber <strong>keine Zeit</strong>? Oder du bist <strong>zu alt zum hacken</strong>?
-                    <a class="btn btn-primary btn-hg btn-block" href="#">Teile deinen Boden</a>
+                    Jedoch <strong>keinen grünen Daumen</strong>? Oder du suchst <strong>Gesellschaft</strong> in deinem grossen Garten? Du würdest schon gerne Tomaten pflanzen, hast aber <strong>keine Zeit</strong>?
+                    <a class="btn btn-primary btn-hg btn-block top-buffer-small" href="/#!/boden-teilen">Teile deinen Boden</a>
                 </div>
                 <div class="col-md-4">
                     <h4><i class="fa fa-home"></i>&nbsp; Du wohnst in der Stadt</h4>
-                    Hast aber <strong>weder Balkon noch Garten</strong>? Du möchtest trotzdem dein eigenes <strong>Gemüse anbauen</strong>, weisst aber nicht wo?
-                    <a class="btn btn-primary btn-hg btn-block" href="#">Finde Boden</a>
+                    Hast aber <strong>weder Balkon noch Garten</strong>? Du möchtest trotzdem in der nahen Umgebung dein eigenes <strong>Gemüse anbauen</strong>, weisst aber nicht wo?
+                    <a class="btn btn-primary btn-hg btn-block top-buffer-small" href="/#!/boden-finden">Finde Boden</a>
                 </div>
             </div>
         </div>
         <hr class="top-buffer">
         <div class="col-md-8 col-md-offset-2">
             <h4>Was ist Aradira?</h4>
-            <p>Aradira ist eine Platform zur Förderung von <a href="">Urban Gardening</a>.</p>
+            <p>Aradira ist eine Plattform zum Teilen von Gärten und zur Förderung von <a href="http://de.wikipedia.org/wiki/Urbaner_Gartenbau">Urban Gardening</a>.</p>
             <p><strong>Gärtner ohne Pflanzfläche</strong> werden mit Leuten zusammen gebracht, welche ihren Garten oder ein Stück <strong>Boden teilen</strong> wollen.
-                Der urbane Gast-Gärtner bepflanzt die Böden mit Gemüsen und Kräutern und lässt als <strong>Gegenleistung</strong> den Besitzer des Bodens an seiner Ernte teilhaben.</p>
+                Der urbane Gast-Gärtner bepflanzt die Böden mit Gemüsen und Kräutern und lässt als <strong>Gegenleistung</strong> den Besitzer des Bodens an seiner Ernte oder am Erfahrungsaustausch teilhaben.</p>
             <!--<p>Damit soll die kleinräumige, gärtnerische Nutzung städtischer Flächen innerhalb von Siedlungsgebieten und der zwischenmenschliche Austausch gefördert werden.</p>-->
-            <p>Mehr über die Idee von Aradira kannst du <a href="#">hier erfahren</a>.</p>
+            <p>Mehr über die Idee von Aradira kannst du <a href="/#!/idee">hier erfahren</a>.</p>
         </div>
         <!--<p>
             Your location: {{coords}}

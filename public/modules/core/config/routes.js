@@ -11,6 +11,26 @@ angular.module('mean.core').config(['$stateProvider', '$urlRouterProvider',
 		state('home', {
 			url: '/',
 			templateUrl: 'modules/core/views/home.html'
-		});
+		}).
+        state('angebote', {
+            url: '/angebote',
+            templateUrl: 'modules/core/views/angebote.html'
+        }).
+        state('gesuche', {
+            url: '/gesuche',
+            templateUrl: 'modules/core/views/gesuche.html'
+        }).
+        state('boden-teilen', {
+            url: '/boden-teilen',
+            templateUrl: 'modules/core/views/boden-teilen.html'
+        }).
+        state('boden-finden', {
+            url: '/boden-finden',
+            templateUrl: 'modules/core/views/boden-finden.html'
+        }).
+        state('idee', {
+            url: '/idee',
+            templateUrl: 'modules/core/views/idee.html'
+        });
 	}
 ]);

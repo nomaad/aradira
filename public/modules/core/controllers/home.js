@@ -3,7 +3,7 @@
 angular.module('mean.core').controller('HomeController', ['$scope', 'Authentication', 'geolocation', 'leafletData', function ($scope, Authentication, geolocation, leafletData) {
     $scope.authentication = Authentication;
 
-    /*geolocation.getLocation().then(function(data){
+    geolocation.getLocation().then(function(data){
         $scope.coords = {lat:data.coords.latitude, long:data.coords.longitude};
 
         leafletData.getMap().then(function(map) {
@@ -12,7 +12,7 @@ angular.module('mean.core').controller('HomeController', ['$scope', 'Authenticat
                 lng: data.coords.longitude, //7.44873,
             },12);
         });
-    });*/
+    });
 
     angular.extend($scope, {
         // set up map center
