@@ -1,8 +1,8 @@
-[![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
+aradira is landsharing app for gardeners in Switzerland.
 
-[![Build Status](https://travis-ci.org/meanjs/mean.png?branch=master)](https://travis-ci.org/meanjs/mean)
+The goal is to promote [urban gardening](http://en.wikipedia.org/wiki/Urban_agriculture). It connects people who own unused land with people that search for a garden.
 
-MEAN.JS is a full-stack JavaScript open-source solution, which provides a solid starting point for [MongoDB](http://www.mongodb.org/), [Node.js](http://www.nodejs.org/), [Express](http://expressjs.com/), and [AngularJS](http://angularjs.org/) based applications. The idea is to solve the common issues with connecting those frameworks, build a robust framework to support daily development needs, and help developers use better practices while working with popular JavaScript components. 
+This app is based on [MEAN.JS](http://meanjs.org/).
 
 ## Before You Begin 
 Before you begin we recommend you read about the basic building blocks that assemble a MEAN.JS application: 
@@ -44,7 +44,7 @@ This command does a few things:
 * If you're running in a development environment, it will then also install development dependencies needed for testing and running your application.
 * Finally, when the install process is over, npm will initiate a bower installcommand to install all the front-end modules needed for the application
 
-## Running Your Application
+## Running the Application
 After the install process is over, you'll be able to run your application using Grunt, just run grunt default task:
 
 ```
@@ -55,22 +55,6 @@ Your application should run on the 3000 port so in your browser just go to [http
                             
 That's it! your application should be running by now, to proceed with your development check the other sections in this documentation. 
 If you encounter any problem try the Troubleshooting section.
-
-## Getting Started With MEAN.JS
-You have your application running but there are a lot of stuff to understand, we recommend you'll go over the [Offical Documentation](http://meanjs.org/docs.html). 
-In the docs we'll try to explain both general concepts of MEAN components and give you some guidelines to help you improve your development procees. We tried covering as many aspects as possible, and will keep update it by your request, you can also help us develop the documentation better by checking out the *gh-pages* branch of this repository.
-
-## Community
-* Use to [Offical Website](http://meanjs.org) to learn about changes and the roadmap.
-* Join #meanjs on freenode.
-* Discuss it in the new [Google Group](https://groups.google.com/d/forum/meanjs)
-* Ping us on [Twitter](http://twitter.com/meanjsorg) and [Facebook](http://facebook.com/meanjs)
-
-## Live Example
-Browse the live MEAN.JS example on [http://meanjs.herokuapp.com](http://meanjs.herokuapp.com).
-
-## Credits
-Inspired by the great work of [Madhusudhan Srinivasa](https://github.com/madhums/)
 
 ## License
 (The MIT License)

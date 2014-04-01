@@ -1,0 +1,69 @@
+<mockup version="1.0" skin="sketch" measuredW="1289" measuredH="1463" mockupW="1221" mockupH="1448">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="68" y="15" w="1221" h="1448" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Aradira%20-%20Landsharing%20in%20der%20Schweiz.%0Ahttp%3A//www.aradira.ch</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Canvas" x="77" y="87" w="1205" h="70" measuredW="100" measuredH="70" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::Label" x="227" y="104" w="108" h="30" measuredW="85" measuredH="37" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>24</size>
+        <text>aradira</text>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Button" x="1006" y="108" w="-1" h="-1" measuredW="82" measuredH="28" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Anmelden</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Button" x="412" y="1338" w="435" h="58" measuredW="354" measuredH="34" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>20</size>
+        <text>Jezt%20registrieren%20und%20Boden%20teilen</text>
+      </controlProperties>
+    </control>
+    <control controlID="15" controlTypeID="com.balsamiq.mockups::Label" x="233" y="302" w="-1" h="-1" measuredW="343" measuredH="46" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Du%20hast%20einen%20Garten%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="25" controlTypeID="com.balsamiq.mockups::Paragraph" x="233" y="360" w="843" h="459" measuredW="200" measuredH="140" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <text>*Finde%20einen%20G%E4rtner%3A%20Du%20stellst%20ihm%20deinen%20ungenutzten%20Boden%20zur%20Verf%FCgung%20oder%20teilst%20ihn%20mit%20jemandem%20und%20erh%E4lst%20als%20Gegenleistung%20frische%20Tomaten%2C%20Erfahrungsaustausch%2C%20einen%20sch%F6nes%20Gem%FCsebeet%20oder%20eine%20nettes%20Gespr%E4ch.*%0A%20%0AAuf%20aradira%20kannst%20du%20einen%20Teil%20deines%20Gartens%20oder%20sonst%20eine%20Fl%E4che%20zur%20Verf%FCgung%20stellen.%20Du%20erstellst%20ein%20Inserat%20auf%20dieser%20Webseite%2C%20wo%20du%20deinen%20Boden%20beschreibst.%20Sobald%20dein%20Inserat%20online%20ist%2C%20k%F6nnen%20sich%20interessierte%20Hobby-G%E4rtner%20darauf%20bewerben.%20Die%20Kommunikation%20erfolgt%20%FCber%20diese%20Webseite.%20Du%20entscheidest%20dich%2C%20wen%20du%20als%20G%E4rtner%20w%E4hlst.%0A%20%0ASobald%20ihr%20euch%20gefunden%20habt%2C%20trefft%20ihr%20weitere%20Vereinbarungen%3A%20%0A-%20Nutzt%20ihr%20den%20Garten%20zusammen%20oder%20wird%20der%20Garten%20nur%20vom%20GastG%E4rtner%20genutzt%3F%0A-%20Gibt%20es%20einen%20oder%20mehrere%20Gastg%E4rtner%3F%0A-%20Was%20wird%20angepflanzt%3F%0A-%20Was%20sind%20die%20Nutzungszeiten%3F%0A%20%0ADas%20k%F6nnt%20ihr%20m%FCndlich%20oder%20schriftlich%20machen.%20F%FCr%20die%20schriftliche%20Variante%2C%20haben%20wir%20%5BMustervereinbarungen%5D%20bereitgestellt%2C%20welche%20von%20beiden%20Parteien%20unterzeichnet%20werden.%20Du%20verlangst%20f%FCr%20den%20Boden%20keine%20finanzielle%20Entsch%E4digung%20---%20die%20Idee%20dieser%20Seite%20ist%20der%20Tausch%20---%20aber%20du%20hast%20Anspruch%20auf%20eine%20*Gegenleistung*.%20Seid%20kreativ%21%0A%20%0AM%F6gliche%20Gegenleistungen%20sind%3A%0A-%20Du%20erh%E4lst%20neues%20G%E4rtnerKnowHow%20durch%20Erfahrungsaustausch%0A-%20Du%20erh%E4lst%20einen%20Teil%20der%20Ernte%20in%20Gem%FCseform%0A-%20Du%20wirst%20zum%20Znacht%20eingeladen%0A-%20Vielleicht%20ist%20es%20dir%20Gegenleistung%20genug%2C%20wenn%20dein%20Garten%20aufbl%FCht%0A-%20Du%20gehst%20zu%20deinem%20G%E4rtner%20in%20den%20Gitarrenunterricht%0A%20%0A%20%0A%20</text>
+      </controlProperties>
+    </control>
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::Label" x="227" y="184" w="861" h="82" measuredW="585" measuredH="82" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>60</size>
+        <text>Deinen%20Boden%20teilen.</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Label" x="242" y="1002" w="-1" h="-1" measuredW="280" measuredH="46" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Wie%20fange%20ich%20an%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Paragraph" x="242" y="1063" w="843" h="263" measuredW="200" measuredH="140" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <text>1.%20Werde%20Mitglied%20von%20aradira%20indem%20du%20dich%20%5Bregistrierst%5D%20%28aradira%20ist%20und%20bleibt%20gratis%2C%20warum%20siehst%20du%20%5Bhier%5D%29.%0A%20%0A2.%20Sobald%20du%20dich%20angemeldet%20hast%2C%20f%FClle%20dein%20%5BProfil%5D%20aus.%0A%20%0A3.%20Erstelle%20ein%20Inserat%20um%20deinen%20%5BBoden%20zu%20teilen%5D%20%0AODER%0ASchaue%20dir%20die%20%5BInserate%5D%20von%20den%20Leuten%20an%2C%20welche%20Boden%20suchen.%0A%20%0A4.%20Lass%20dich%20kontaktieren%20oder%20nimm%20Kontakt%20mit%20potentiellen%20G%E4rtnern%20auf.%0A%20%0A5.%20Sobald%20ihr%20euch%20gefunden%20habt%2C%20trefft%20ihr%20euch%20am%20besten%20im%20Garten%20und%20trefft%20ihr%20zusammen%20eine%20m%FCndliche%20oder%20%5Bschriftliche%5D%20Vereinbarung%2C%20in%20welcher%20ihr%20Nutzungszeiten%2C%20die%20Art%20der%20Gegenleistung%20etc.%20bestimmt.</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Label" x="233" y="834" w="299" h="47" measuredW="299" measuredH="46" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>32</size>
+        <text>Was%20spricht%20daf%FCr%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="36" controlTypeID="com.balsamiq.mockups::Paragraph" x="233" y="894" w="843" h="96" measuredW="200" measuredH="140" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <text>-%20Wenn%20du%20deinen%20Garten%20nicht%20nutzt%2C%20wirst%20du%20Freude%20daran%20haben%2C%20wie%20er%20aufbl%FCht%0A-%20Wenn%20du%20deinen%20Garten%20nur%20teilweise%20nutzt%2C%20kannst%20du%20von%20der%20Erfahrung%20anderer%20profitieren%0A-%20Ihr%20k%F6nnt%20euch%20die%20Arbeit%20teilen%2C%20so%20wird%20der%20Garten%20auch%20gepflegt%2C%20wenn%20jemand%20in%20den%20Ferien%20ist%0A-%20Ihr%20k%F6nnt%20die%20oft%20%FCppige%20Ernte%20teilen</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
