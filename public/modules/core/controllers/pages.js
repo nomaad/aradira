@@ -1,10 +1,12 @@
 'use strict';
 
-angular.module('mean.core').controller('PagesController', ['$scope', 'Authentication',
-    function($scope, Authentication) {
+angular.module('mean.core').controller('PagesController', ['$scope', 'Authentication', '$anchorScroll',
+    function($scope, Authentication, $anchorScroll) {
         $scope.authentication = Authentication;
+        $anchorScroll();
 
-        $scope.gesuche = function() {
+        $scope.bodenTeilen = function() {
+
         };
     }
 ]);

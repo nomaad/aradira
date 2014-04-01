@@ -1,8 +1,9 @@
 'use strict';
 
-angular.module('mean.users').controller('AuthenticationController', ['$scope', '$http', '$location', 'Authentication',
-    function($scope, $http, $location, Authentication) {
+angular.module('mean.users').controller('AuthenticationController', ['$scope', '$http', '$location', 'Authentication', '$anchorScroll',
+    function($scope, $http, $location, Authentication, $anchorScroll) {
         $scope.authentication = Authentication;
+        $anchorScroll();
 
         $scope.signup = function() {
             $http.post('/auth/signup', $scope.credentials).success(function(data) {
