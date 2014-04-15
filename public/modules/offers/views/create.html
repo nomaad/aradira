@@ -1,0 +1,45 @@
+<section data-ng-controller="OffersController">
+    <div class="page-header">
+        <h1>Neues Angebot</h1>
+    </div>
+    <p>Erfasse ein neues Angebot, um deinen Boden zu teilen.</p>
+    <form class="form-horizontal" data-ng-submit="create()">
+        <div class="col-md-5">
+            <fieldset>
+               <div class="form-group">
+                   <label class="control-label" for="title">Titel</label>
+                   <div class="controls">
+                       <input type="text" data-ng-model="title" id="title" class="form-control" placeholder="Titel" required>
+                   </div>
+               </div>
+               <div class="form-group">
+                   <label class="control-label" for="description">Beschreibung</label>
+                   <div class="controls">
+                       <textarea data-ng-model="description" id="description" class="form-control" cols="30" rows="10" placeholder="Beschreibung"></textarea>
+                   </div>
+               </div>
+                <div class="form-group">
+                    <label class="control-label" for="width">Breite</label>
+                    <div class="controls">
+                        <input type="number" data-ng-model="width" id="width" class="form-control" placeholder="Breite" required>
+                        <input type="number" data-ng-model="height" id="height" class="form-control" placeholder="Länge" required>
+                    </div>
+                </div>
+           </fieldset>
+        </div>
+        <div class="col-md-5 col-md-offset-1">
+            <fieldset>
+                <div class="form-group">
+                    <label class="control-label" for="address">Adresse</label>
+                    <div class="controls">
+                        <input type="text" data-ng-model="address" id="address" class="form-control" placeholder="Adresse" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-default">
+                </div>
+            </fieldset>
+
+        </div>
+    </form>
+</section>

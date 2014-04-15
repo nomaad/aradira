@@ -1,0 +1,15 @@
+<section data-ng-controller="OffersController" data-ng-init="find()">
+    <div class="page-header">
+        <h1>Angebote</h1>
+    </div>
+    <div class="list-group">
+        <a data-ng-repeat="offer in offers" data-ng-href="#!/offers/{{offer._id}}" class="list-group-item">
+            <small class="list-group-item-text">{{offer.created | date:'medium'}} / {{offer.user.displayName}}</small>
+            <h4 class="list-group-item-heading">{{offer.title}}</h4>
+            <p class="list-group-item-text">{{offer.content}}</p>
+        </a>
+    </div>
+    <div class="alert alert-warning text-center" data-ng-hide="!offers || offers.length">
+    	Noch keine Angebote, warum <a href="/#!/angebote/neu">erstellst</a> du nicht eines?
+    </div>
+</section>
