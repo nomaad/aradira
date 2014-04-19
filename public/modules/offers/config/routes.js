@@ -2,11 +2,11 @@
 
 //Setting up route
 angular.module('aradira.offers').config(['$stateProvider',
-	function($stateProvider) {
-		// Offers state routing
+    function($stateProvider) {
+        // Offers state routing
 		$stateProvider.
 		state('createOffer', {
-			url: '/angebote/neu',
+            url: '/angebote/neu',
 			templateUrl: 'modules/offers/views/create.html'
 		}).
 		state('editOffer', {
@@ -14,9 +14,9 @@ angular.module('aradira.offers').config(['$stateProvider',
 			templateUrl: 'modules/offers/views/edit.html'
 		}).
         state('listOffers', {
-           url: '/angebote',
-           templateUrl: 'modules/offers/views/list.html'
-       }).
+            url: '/angebote',
+            templateUrl: 'modules/offers/views/list.html'
+        }).
         state('listOffers.details', {
             url: '/:offerId',
             onEnter: function($stateParams, $state, $modal) {
@@ -27,7 +27,7 @@ angular.module('aradira.offers').config(['$stateProvider',
                     windowClass: 'details-dialog'
                 }).result.then(function(result) {
                         if (result) {
-                            return $state.transitionTo("listOffers");
+                            return $state.transitionTo('listOffers');
                         }
                     });
             }

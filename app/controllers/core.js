@@ -15,7 +15,7 @@ exports.index = function(req, res) {
 
 exports.geocode = function(req, res) {
     geocode.geocode(req.body.query, function(err, data) {
-        if (err || !data || data.length == 0) {
+        if (err || !data || data.length === 0) {
             console.log(err);
             res.render('error', {
                 status: 500
@@ -29,7 +29,7 @@ exports.geocode = function(req, res) {
 
 exports.reverseGeocode = function(req, res) {
     geocode.reverse(req.body.lat, req.body.lon, function(err, data) {
-        if (err || !data || data.length == 0) {
+        if (err || !data || data.length === 0) {
             console.log(err);
             res.render('error', {
                 status: 500

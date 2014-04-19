@@ -86,10 +86,9 @@ exports.list = function(req, res) {
         };
     }
 
-
     Offer.find(params).sort('-created').populate('user', 'displayName').exec(function(err, offers) {
 		if (err) {
-            console.log(error);
+            console.log(err);
 			res.render('error', {
 				status: 500
 			});
