@@ -72,10 +72,6 @@ OfferSchema.path('height').validate(function(height) {
     return height && height > 0;
 }, 'Bitte eine ungefähre Länge der Gartenfläche angeben.');
 
-OfferSchema.path('slots').validate(function(slots) {
-    return slots && slots < 11 && slots > 0;
-}, 'Bitte für die Anzahl Gärtner eine Zahl zwischen 1 und 10 eingeben.');
-
 
 /**
  * Statics

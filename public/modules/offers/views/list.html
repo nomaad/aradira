@@ -39,15 +39,29 @@
     </div>
     <script type="text/ng-template" id="offerDetails.html">
         <div class="modal-header">
-            <h3>{{offer.title}}</h3>
+            <h2>{{offer.title}}</h2>
         </div>
         <div class="modal-body">
-            <small>
-                <em class="text-muted">Erstellt am {{offer.created | date:'mediumDate'}} von {{offer.user.displayName}}</em>
-            </small>
-            <p class="">
+            <div class="row lead">
+                <div class="col-xs-3">
+                    <b>Grösse:</b><br/> {{offer.width}} x {{offer.height}} m
+                </div>
+                <div class="col-xs-3">
+                    <b>PLZ & Ort:</b><br/> {{(offer.geoInfo.zipcode ? offer.geoInfo.zipcode + ' ' : '')}} {{offer.geoInfo.city}}
+                </div>
+                <div class="col-xs-3">
+                    <b>Gemeinschaftlich:</b><br/> <i ng-show="offer.communal" class="fa fa-check-square-o"></i><span ng-hide="offer.communal">nein</span>
+                </div>
+                <div class="col-xs-3" ng-show="offer.communal">
+                    <b>Anzahl Plätze:</b><br/>{{offer.slots === 0 ? 'unbegrenzt' : offer.slots}}
+                </div>
+            </div>
+            <p>
                 {{offer.description}}
             </p>
+            <small class="pull-right">
+                <em class="text-muted">Erstellt am {{offer.created | date:'mediumDate'}} von {{offer.user.displayName}}</em>
+            </small>
         </div>
         <div class="modal-footer">
             <button class="btn btn-primary" ng-click="close()">Schliessen</button>

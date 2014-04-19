@@ -13,9 +13,11 @@ var mongoose = require('mongoose'),
 exports.create = function(req, res) {
 	var offer = new Offer(req.body);
 	offer.user = req.user;
+    //console.log(offer);
 
 	offer.save(function(err) {
 		if (err) {
+            console.log(err);
 			return res.send('users/signup', {
 				errors: err.errors,
 				offer: offer

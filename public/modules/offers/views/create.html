@@ -36,10 +36,22 @@
                     </div>
                 </div>
                 <div class="form-group">
+                    <label class="control-label" for="address">Gemeinschaftsgarten</label>
+                    <div class="controls">
+                        <input type="checkbox" checked data-toggle="switch" data-ng-model="communal" />
+                    </div>
+                </div>
+                <div class="form-group" ng-show="communal">
+                    <label class="control-label" for="width">Anzahl Plätze</label>
+                    <div class="controls">
+                        <select ng-model="slot" ng-options="d.name for d in slotList"></select>
+                    </div>
+                </div>
+                <div class="form-group">
                     <input type="submit" class="btn btn-default">
                 </div>
+                <code>{{slot}}</code>
             </fieldset>
-
         </div>
     </form>
 </section>

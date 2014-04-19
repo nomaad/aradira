@@ -17,6 +17,20 @@ angular.module('aradira.offers').controller('OffersController', ['$scope', '$sta
         ];
         $scope.distance = $scope.distances[1];
 
+        $scope.slotList = [
+            {name:'unbegrenzt', value:0},
+            {name:'2', value:2},
+            {name:'3', value:3},
+            {name:'4', value:4},
+            {name:'5', value:5},
+            {name:'6', value:6},
+            {name:'7', value:7},
+            {name:'8', value:8},
+            {name:'9', value:9},
+            {name:'10', value:10},
+        ];
+        $scope.slot = $scope.slotList[0];
+
         angular.extend($scope, {
             // set up map center
             cen: {
@@ -93,7 +107,7 @@ angular.module('aradira.offers').controller('OffersController', ['$scope', '$sta
                             (offer.communal ?
                                 '<tr>' +
                                 '<td><b>Anzahl Plätze:</b></td>' +
-                                '<td>' + offer.slots + '</td>' +
+                                '<td>' + (offer.slots === 0 ? 'unbegrenzt' : offer.slots) + '</td>' +
                                 '</tr>' : '') +
                             '</table>' +
                             '<a href="/#!/angebote/' + offer._id +'" class="btn btn-block btn-primary popup-link">Angebot ansehen</a>' +
@@ -112,14 +126,12 @@ angular.module('aradira.offers').controller('OffersController', ['$scope', '$sta
                 width: this.width,
                 height: this.height,
                 communal: this.communal,
-                slots: this.slots
+                slots: $scope.slot.value
             });
             offer.$save(function(response) {
+                console.log(response);
                 $location.path('angebote/' + response._id);
             });
-
-            this.title = '';
-            this.content = '';
         };
 
         $scope.remove = function(offer) {
