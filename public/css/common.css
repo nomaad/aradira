@@ -10,3 +10,18 @@ a.undecorated-link:hover {
 
 .top-buffer{ margin-top: 40px; }
 .top-buffer-small{ margin-top: 15px; }
+
+/*** Map popups ****/
+.popup-title{font-size:16px; margin-bottom:10px}
+.leaflet-container a.popup-link {color: #fff; }
+.popup-table{margin-bottom:10px;}
+.popup-table > tbody > tr > td {
+    padding:0px;
+    border:none;
+}
+.tab-content{padding:10px;}
+.search-bar{
+    width:250px;
+}
+.input-group-rounded .input-group-btn + .search-input{padding-left:5px;}
+.list-group-item{border:none;}

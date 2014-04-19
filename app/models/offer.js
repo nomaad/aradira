@@ -5,7 +5,7 @@
  */
 var mongoose = require('mongoose'),
 	Schema = mongoose.Schema,
-    geocoder = require('node-geocoder').getGeocoder('openstreetmap', 'http', {});
+    geocoder = require('node-geocoder').getGeocoder('google', 'http', {language:'de'});
 
 
 /**
@@ -31,7 +31,8 @@ var OfferSchema = new Schema({
         default: '',
         trim: true
     },
-    position: [Number],
+    position: { type : [Number], index: '2d' },
+    geoInfo: Schema.Types.Mixed,
     width: Number,
     height: Number,
     communal: {
@@ -99,7 +100,8 @@ OfferSchema.pre('save', function (next) {
         else {
             if(res && res.length > 0) {
                 //console.log(res[0]);
-                doc.position = [res[0].latitude, res[0].longitude];
+                doc.position = [parseFloat(res[0].longitude), parseFloat(res[0].latitude)];
+                doc.geoInfo = res[0];
                 next();
             }
             next(new Error('Adresse nicht gefunden'));
@@ -110,6 +112,6 @@ OfferSchema.pre('save', function (next) {
 /**
  * Indexes
  */
-OfferSchema.index({ 'position' : '2dsphere'});
+//OfferSchema.index({ position : '2d'});
 
 mongoose.model('Offer', OfferSchema);

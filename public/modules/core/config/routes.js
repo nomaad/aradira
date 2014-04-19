@@ -12,10 +12,6 @@ angular.module('mean.core').config(['$stateProvider', '$urlRouterProvider',
 			url: '/',
 			templateUrl: 'modules/core/views/home.html'
 		}).
-        /*state('angebote', {
-            url: '/angebote',
-            templateUrl: 'modules/core/views/angebote.html'
-        }).*/
         state('gesuche', {
             url: '/gesuche',
             templateUrl: 'modules/core/views/gesuche.html'

@@ -25,12 +25,12 @@
         <text>Diese%20B%F6den%20in%20deiner%20N%E4he%20suchen%20einen%20G%E4rtner%3A</text>
       </controlProperties>
     </control>
-    <control controlID="9" controlTypeID="com.balsamiq.mockups::Icon" x="354" y="454" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="6" locked="false" isInGroup="-1">
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::Icon" x="597" y="608" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>DownArrowIcon%7Clarge</icon>
       </controlProperties>
     </control>
-    <control controlID="10" controlTypeID="com.balsamiq.mockups::Icon" x="933" y="608" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Icon" x="762" y="579" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <icon>DownArrowIcon%7Clarge</icon>
       </controlProperties>
@@ -109,6 +109,74 @@
       <controlProperties>
         <size>60</size>
         <text>Landsharing%20in%20der%20Schweiz.</text>
+      </controlProperties>
+    </control>
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::Tooltip" x="304" y="402" w="317" h="195" measuredW="35" measuredH="143" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+        <tooltipDirection>SE</tooltipDirection>
+      </controlProperties>
+    </control>
+    <control controlID="34" controlTypeID="com.balsamiq.mockups::Label" x="329" y="417" w="264" h="31" measuredW="252" measuredH="29" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Gartenbeet%20in%20der%20L%E4nggasse</text>
+      </controlProperties>
+    </control>
+    <control controlID="35" controlTypeID="com.balsamiq.mockups::Label" x="370" y="556" w="275" h="23" measuredW="187" measuredH="20" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>11</size>
+        <text>Erstellt%20am%2018.03.2014%20von%20%5Bnomaad%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="37" controlTypeID="com.balsamiq.mockups::Paragraph" x="329" y="453" w="268" h="92" measuredW="200" measuredH="140" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <text>*Gr%F6sse%3A*%20%09%09%09%093%20x%201%20m%0A*PLZ%20%26%20Ort%3A*%20%09%09%093012%20Bern%0A*Gemeinschaftsgarten%3A*</text>
+      </controlProperties>
+    </control>
+    <control controlID="38" controlTypeID="com.balsamiq.mockups::Icon" x="488" y="493" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="25" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>XIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="39" controlTypeID="com.balsamiq.mockups::Link" x="411" y="522" w="-1" h="-1" measuredW="108" measuredH="23" zOrder="26" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Angebot%20ansehen</text>
+      </controlProperties>
+    </control>
+    <control controlID="40" controlTypeID="com.balsamiq.mockups::Tooltip" x="769" y="347" w="317" h="223" measuredW="35" measuredH="195" zOrder="27" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text/>
+        <tooltipDirection>SW</tooltipDirection>
+      </controlProperties>
+    </control>
+    <control controlID="41" controlTypeID="com.balsamiq.mockups::Label" x="780" y="364" w="297" h="31" measuredW="297" measuredH="29" zOrder="28" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>18</size>
+        <text>Interkultureller%20Garten%20in%20B%FCmpliz</text>
+      </controlProperties>
+    </control>
+    <control controlID="42" controlTypeID="com.balsamiq.mockups::Label" x="835" y="529" w="275" h="23" measuredW="187" measuredH="20" zOrder="29" locked="false" isInGroup="-1">
+      <controlProperties>
+        <size>11</size>
+        <text>Erstellt%20am%2018.03.2014%20von%20%5Bnomaad%5D</text>
+      </controlProperties>
+    </control>
+    <control controlID="43" controlTypeID="com.balsamiq.mockups::Paragraph" x="793" y="402" w="295" h="92" measuredW="200" measuredH="140" zOrder="30" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>false</bold>
+        <text>*Gr%F6sse%3A*%20%09%09%09%0940%20x%2080%20m%0A*PLZ%20%26%20Ort%3A*%20%09%09%09%093018%20Bern%0A*Gemeinschaftsgarten%3A*%0A*Anzahl%20Pl%E4tze%3A*%09%09%09unbegrenzt</text>
+      </controlProperties>
+    </control>
+    <control controlID="44" controlTypeID="com.balsamiq.mockups::Icon" x="967" y="440" w="-1" h="-1" measuredW="16" measuredH="16" zOrder="31" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CheckMarkIcon%7Cxsmall</icon>
+      </controlProperties>
+    </control>
+    <control controlID="45" controlTypeID="com.balsamiq.mockups::Link" x="876" y="495" w="-1" h="-1" measuredW="108" measuredH="23" zOrder="32" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Angebot%20ansehen</text>
       </controlProperties>
     </control>
   </controls>

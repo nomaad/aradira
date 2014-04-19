@@ -30,7 +30,7 @@ exports.create = function(req, res) {
  * Show the current offer
  */
 exports.read = function(req, res) {
-	res.jsonp(req.article);
+	res.jsonp(req.offer);
 };
 
 /**
@@ -73,8 +73,21 @@ exports.delete = function(req, res) {
  * List of offers
  */
 exports.list = function(req, res) {
-    Offer.find().sort('-created').populate('user', 'displayName').exec(function(err, offers) {
+    //console.log(req.query);
+    var params = {};
+    if(req.query.lon && req.query.lat) {
+        params = {
+            position: {
+                $nearSphere: [ req.query.lon , req.query.lat ],
+                $maxDistance: req.query.dist ? req.query.dist / 6371 : 100 / 6371
+            }
+        };
+    }
+
+
+    Offer.find(params).sort('-created').populate('user', 'displayName').exec(function(err, offers) {
 		if (err) {
+            console.log(error);
 			res.render('error', {
 				status: 500
 			});
@@ -94,19 +107,6 @@ exports.offerByID = function(req, res, next, id) {
 		req.offer = offer;
 		next();
 	});
-};
-
-exports.near = function(req, res) {
-    Offer.find({position : { $near : [req.params.lon, req.params.lat], $maxDistance : req.params.dist/68.91}})
-        .exec(function(err, offers) {
-            if (err) {
-                res.render('error', {
-                    status: 500
-                });
-            } else {
-                res.jsonp(offers);
-            }
-        });
 };
 
 /**

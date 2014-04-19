@@ -1,15 +1,40 @@
-<section data-ng-controller="OffersController" data-ng-init="find()">
+<section data-ng-controller="OffersController">
     <div class="page-header">
         <h1>Angebote</h1>
     </div>
-    <div class="list-group">
-        <a data-ng-repeat="offer in offers" data-ng-href="#!/offers/{{offer._id}}" class="list-group-item">
-            <small class="list-group-item-text">{{offer.created | date:'medium'}} / {{offer.user.displayName}}</small>
-            <h4 class="list-group-item-heading">{{offer.title}}</h4>
-            <p class="list-group-item-text">{{offer.content}}</p>
-        </a>
+    <div class="pull-right">
+        <div class="input-group input-group-rounded search-bar">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn"><span class="fui-search"></span></button>
+                    </span>
+            <input ui-keypress="{enter: 'changePlace()'}" type="text" class="form-control search-input" placeholder="Adresse/PLZ/Ort" id="search" ng-model="city">
+        </div>
     </div>
+    <div class="pull-right">
+        <select ng-model="distance" ng-options="d.name for d in distances" ng-change="changeDistance()"></select>
+    </div>
+    <tabset>
+        <tab>
+            <tab-heading>
+                <i class="fa fa-map-marker"></i> Karte
+            </tab-heading>
+            <leaflet markers="markers" center="cen" paths="paths" height="600px"></leaflet>
+        </tab>
+        <tab>
+            <tab-heading>
+                <i class="fa fa-list-ul"></i> Liste
+            </tab-heading>
+            <div class="list-group">
+                <a ng-animate="'animate'" data-ng-repeat="offer in offers" data-ng-href="#!/angebote/{{offer._id}}" class="list-group-item">
+                    <small class="list-group-item-text">{{offer.created | date:'medium'}} / {{offer.user.displayName}}</small>
+                    <h4 class="list-group-item-heading">{{offer.title}}</h4>
+                    <p class="list-group-item-text">{{offer.description}}</p>
+                </a>
+            </div>
+        </tab>
+    </tabset>
+    <code>{{data}}</code>
     <div class="alert alert-warning text-center" data-ng-hide="!offers || offers.length">
-    	Noch keine Angebote, warum <a href="/#!/angebote/neu">erstellst</a> du nicht eines?
+    	Noch keine Angebote in {{city}}, warum <a href="/#!/angebote/neu">erstellst</a> du nicht eines?
     </div>
 </section>
