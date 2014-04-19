@@ -11,7 +11,7 @@ a.undecorated-link:hover {
 .top-buffer{ margin-top: 40px; }
 .top-buffer-small{ margin-top: 15px; }
 
-/*** Map popups ****/
+/*** Map popups & details dialog****/
 .popup-title{font-size:16px; margin-bottom:10px}
 .leaflet-container a.popup-link {color: #fff; }
 .popup-table{margin-bottom:10px;}
@@ -25,3 +25,11 @@ a.undecorated-link:hover {
 }
 .input-group-rounded .input-group-btn + .search-input{padding-left:5px;}
 .list-group-item{border:none;}
+.details-dialog > .modal-dialog {
+    width: 80%;
+}
+@media(max-width:767px){
+    .details-dialog > .modal-dialog {
+        width: 95%;
+    }
+}

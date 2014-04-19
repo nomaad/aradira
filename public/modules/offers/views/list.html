@@ -37,4 +37,20 @@
     <div class="alert alert-warning text-center" data-ng-hide="!offers || offers.length">
     	Noch keine Angebote in {{city}}, warum <a href="/#!/angebote/neu">erstellst</a> du nicht eines?
     </div>
+    <script type="text/ng-template" id="offerDetails.html">
+        <div class="modal-header">
+            <h3>{{offer.title}}</h3>
+        </div>
+        <div class="modal-body">
+            <small>
+                <em class="text-muted">Erstellt am {{offer.created | date:'mediumDate'}} von {{offer.user.displayName}}</em>
+            </small>
+            <p class="">
+                {{offer.description}}
+            </p>
+        </div>
+        <div class="modal-footer">
+            <button class="btn btn-primary" ng-click="close()">Schliessen</button>
+        </div>
+    </script>
 </section>
